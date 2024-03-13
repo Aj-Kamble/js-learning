@@ -11,7 +11,7 @@ displayMsg();
 function hobbies() {
     var cooking = "Non-Veg";
     var dancing = "Bollywood";
-    console.log("My Hobbies are: " , cooking , dancing);
+    console.log("My Hobbies are: " , "cooking: " , cooking , "Dancing: " , dancing);
 }
 hobbies();
 

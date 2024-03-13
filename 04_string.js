@@ -30,3 +30,46 @@ console.log("============ concat () ======================");
 var firstName = "Ajay";
 var lastName = "Kamble";
 console.log("Use Of Concat: ", firstName.concat(lastName));
+
+console.log("============ replace () ======================");
+
+var greets = "Good Morning";
+var replaceMethod = greets.replace("Morning" , "Afternoon");
+console.log(`use case of replace method: ${replaceMethod}`);
+
+
+console.log(`=================== toUpperCase () && toLowerCase==================`);
+var greets = "Good Morning";
+var greetsInUpperCase = greets.toUpperCase();
+console.log(`${greets} is in Upper Case: ${greetsInUpperCase}`);
+
+var greetsInLoweCase = greets.toLowerCase();
+console.log(`${greets} is in Lower Case: ${greetsInLoweCase}`);
+
+
+console.log(`=================== trim () ==================`);
+var greets = "   Good Morning   ";
+var greetsLength = greets.length;
+console.log(`length of greets is: ${greetsLength}`);
+
+var trimUseCase = greets.trim();
+console.log(`length of  greets after trim is: ${trimUseCase.length} and its value: ${trimUseCase}` );
+
+var removeSpaceLength = trimUseCase.length;
+var result = greetsLength - removeSpaceLength;
+console.log(`after removing space in string using trim: ${result}`);
+
+
+console.log(`==================== include() ====================`);
+var fullName = "Ajay Kamble";
+var includeMethod = fullName.includes("Ajay")
+console.log(`use Case of Include(): ${includeMethod}`);
+
+
+
+console.log(`==================== slice () ====================`);
+
+var str = "Software Developer";
+var sliceUseCase = str.slice(3, 8);
+console.log(`Use Case of Slice: ${sliceUseCase}`);
+
