@@ -49,27 +49,63 @@ console.log(`${greets} is in Lower Case: ${greetsInLoweCase}`);
 
 console.log(`=================== trim () ==================`);
 var greets = "   Good Morning   ";
-var greetsLength = greets.length;
-console.log(`length of greets is: ${greetsLength}`);
+var lengthBeforeTrim = greets.length;
+console.log(`${greets} it's length is: ${lengthBeforeTrim}`);
 
-var trimUseCase = greets.trim();
-console.log(`length of  greets after trim is: ${trimUseCase.length} and its value: ${trimUseCase}` );
+var greetAfterTrim = greets.trim();
+var lengthAfterTrim = greetAfterTrim.length;
+console.log(`${greetAfterTrim} it's length is: ${lengthAfterTrim}`);
 
-var removeSpaceLength = trimUseCase.length;
-var result = greetsLength - removeSpaceLength;
-console.log(`after removing space in string using trim: ${result}`);
+
+console.log(`Total Space removed is:: ${lengthBeforeTrim - lengthAfterTrim}`);
 
 
 console.log(`==================== include() ====================`);
 var fullName = "Ajay Kamble";
 var includeMethod = fullName.includes("Ajay")
-console.log(`use Case of Include(): ${includeMethod}`);
+console.log(`Is String: ${fullName}  includes words or chars'Ajay': ${includeMethod}`);   // true
+
+var includeMethod = fullName.includes("Mbl")
+console.log(`Is String: ${fullName}  includes words or chars'Mbl': ${includeMethod}`);
+
+
+console.log(`==================== Search () ====================`);
+var greets = "Good Morning";
+var result = greets.search("Morning");
+console.log(`"Morning" is available at ${result}`);
+
+var result = greets.search("r");
+console.log(`"r" is available at ${result}`);
 
 
 
 console.log(`==================== slice () ====================`);
+var greets = "Good Morning"
+var result = greets.slice(3, 8);
+console.log(`use Case of Slice: ${result}`);
 
-var str = "Software Developer";
-var sliceUseCase = str.slice(3, 8);
-console.log(`Use Case of Slice: ${sliceUseCase}`);
 
+console.log(`==================== split () ====================`);
+var greets = "Good Morning";
+var resultValue = greets.split(" ");
+console.log(resultValue);
+console.log(`Total Words Are: ${resultValue}`);
+
+
+//write  a function with name totalWord() with one argument
+// 'I am Happy Buddy'
+// 'I am leaning JavaScript'
+// and its function returns the total number of words
+
+function totalWord(sentence){
+    var total_Words = sentence.split(" ");
+    var word = total_Words.length
+    return word;
+}
+var first_Sentence = totalWord("I am happy buddy");
+
+console.log(`total words in first Sentence: ${first_Sentence}`);
+
+var second_sentence = totalWord("I am learning JavaScript the language of internat");
+
+console.log(`total words in Second Sentence: ${second_sentence}`);
