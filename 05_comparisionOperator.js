@@ -25,6 +25,7 @@ console.log(`less than equal :${value1 <= value2}`)
 
 
 console.log("================== >, >= Operator =====================");
+
 console.log(`Greater than > operator ${50>55}`);   // true
 
 console.log(`Greater than > operator ${56>55}`);   // true
